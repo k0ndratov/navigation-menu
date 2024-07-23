@@ -1,0 +1,43 @@
+{
+    "title": "Мероприятия",
+    "buttonBlocks": [
+        {
+            "title": "Онлайн",
+            "titleClass": "text-primary",
+            "buttons": [
+                {
+                    "title": "Слёрм Бар",
+                    "link": "https://slurm.io/bar",
+                    "class": "btn-outline-primary"
+                },
+                {
+                    "title": "Вебинары",
+                    "link": "https://slurm.io/webinars",
+                    "class": "btn-outline-primary"
+                }
+            ]
+        },
+        {
+            "title": "Подкаст",
+            "titleClass": "text-secondary",
+            "buttons": [
+                {
+                    "title": "В поисках бирюзовых компаний",
+                    "link": "https://slurm.mave.digital/",
+                    "class": "btn-white-primary"
+                }
+            ]
+        }
+    ],
+    "info": "Duis fringilla ligula eu lacus pharetra euismod.<br />Vivamus sagittis risus nisl, et consectetur neque dapibus in.",
+    "links": [
+        {
+            "title": "Календарь",
+            "link": "https://slurm.io/events#future"
+        },
+        {
+            "title": "Архив",
+            "link": "https://slurm.io/events#past"
+        }
+    ]
+}

@@ -1,0 +1,121 @@
+{
+    "title": "Каталог курсов",
+    "buttonBlocks": [
+        {
+            "title": null,
+            "titleClass": null,
+            "buttons": [
+                {
+                    "title": "Все курсы",
+                    "link": "https://slurm.io/catalog",
+                    "class": "btn-dark-primary",
+                    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />Aliquam feugiat facilisis nisi ut cursus."
+                },
+                {
+                    "title": "Инженер",
+                    "link": "https://slurm.io/catalog?direction_ids=30",
+                    "class": "btn-white-primary",
+                    "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /> Pellentesque turpis ante, posuere ut mauris eu, maximus hendrerit nisi."
+                },
+                {
+                    "title": "Разработчик",
+                    "link": "https://slurm.io/catalog?direction_ids=17",
+                    "class": "btn-white-primary",
+                    "info": "Integer sit amet hendrerit nisl, ac auctor ante.<br />Quisque vel imperdiet metus."
+                },
+                {
+                    "title": "Начинающий",
+                    "link": "https://slurm.io/catalog?experience_level=1",
+                    "class": "btn-white-primary",
+                    "info": "Praesent id odio finibus, vehicula orci eget, elementum urna.<br />Maecenas semper est nec dolor faucibus ultrices."
+                }
+            ]
+        },
+        {
+            "title": null,
+            "titleClass": null,
+            "buttons": [
+                {
+                    "title": "Архитектура",
+                    "link": "https://slurm.io/catalog?direction_ids=22",
+                    "class": "btn-outline-primary",
+                    "info": "Cras faucibus, augue sed dictum aliquet, felis dolor pretium mi, et maximus purus ante ut leo.<br />Mauris a tempor nisl."
+                },
+                {
+                    "title": "Факультет Kubernetes",
+                    "link": "https://slurm.io/catalog?direction_ids=19",
+                    "class": "btn-outline-primary",
+                    "info": "Cras faucibus, augue sed dictum aliquet, felis dolor pretium mi, et maximus purus ante ut leo.<br />Mauris a tempor nisl."
+                },
+                {
+                    "title": "DevOps и SRE",
+                    "link": "https://slurm.io/catalog?direction_ids=16",
+                    "class": "btn-outline-primary",
+                    "info": "Aenean a finibus ligula, ac interdum neque.<br />Fusce non viverra est, a aliquet lorem."
+                },
+                {
+                    "title": "CI/CD и IaC",
+                    "link": "https://slurm.io/catalog?direction_ids=15",
+                    "class": "btn-outline-primary",
+                    "info": "Sed pretium malesuada justo, in interdum neque blandit vel.<br />Sed mauris mauris, dictum nec aliquet id, dapibus et sem."
+                },
+                {
+                    "title": "Docker",
+                    "link": "https://slurm.io/catalog?direction_ids=29",
+                    "class": "btn-outline-primary",
+                    "info": "Phasellus at tincidunt elit, vitae consectetur nibh.<br />Fusce nulla justo, vulputate non nulla et, laoreet tristique arcu."
+                },
+                {
+                    "title": "Мониторинг",
+                    "link": "https://slurm.io/catalog?direction_ids=18",
+                    "class": "btn-outline-primary",
+                    "info": "Cras tortor felis, aliquam sit amet maximus eget, blandit mattis diam.<br />Quisque eleifend a nulla non convallis."
+                },
+                {
+                    "title": "Облака",
+                    "link": "https://slurm.io/catalog?direction_ids=28",
+                    "class": "btn-outline-primary",
+                    "info": "Curabitur porttitor dui justo, at convallis orci egestas et.<br />Morbi sit amet mattis ex."
+                },
+                {
+                    "title": "Работа с данными",
+                    "link": "https://slurm.io/catalog?direction_ids=21",
+                    "class": "btn-outline-primary",
+                    "info": "Suspendisse potenti.<br />Fusce euismod tellus mi, vitae laoreet ante dignissim mollis."
+                },
+                {
+                    "title": "Безопасность",
+                    "link": "https://slurm.io/catalog?direction_ids=20",
+                    "class": "btn-outline-primary",
+                    "info": "Duis vulputate orci in est condimentum lacinia.<br />Quisque eget velit id massa iaculis consequat a non leo."
+                },
+                {
+                    "title": "Программирование",
+                    "link": "https://slurm.io/catalog?direction_ids=27",
+                    "class": "btn-outline-primary",
+                    "info": "In hac habitasse platea dictumst.<br />Phasellus ac erat tempor, tincidunt nibh bibendum, ultrices nisi."
+                },
+                {
+                    "title": "Soft skills",
+                    "link": "https://slurm.io/catalog?direction_ids=26",
+                    "class": "btn-outline-primary",
+                    "info": "Praesent in massa laoreet, dapibus erat at, posuere erat.<br />Maecenas dapibus augue nec elit cursus scelerisque."
+                },
+                {
+                    "title": "Бесплатные курсы",
+                    "link": "https://slurm.io/catalog?price_category=free",
+                    "class": "btn-outline-success",
+                    "info": "Etiam et tellus a massa condimentum placerat.<br />Sed efficitur maximus leo, ut laoreet dolor congue nec."
+                }
+            ]
+        }
+    ],
+    "info": "Можно просто выбрать курс в <u><a href=\"#\" class=\"text-secondary\">Каталоге</a></u> и приобрести его.<br />А можно не просто. Показываем как это может быть ещё лучше для людей и компаний.",
+    "links": [
+        {
+            "title": "Календарь запуска курсов",
+            "link": "https://slurm.io/calendar"
+        }
+    ]
+}
+

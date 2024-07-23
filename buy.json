@@ -1,0 +1,52 @@
+{
+    "title": "Варианты покупки",
+    "buttonBlocks": [
+        {
+            "title": "Для людей",
+            "titleClass": "text-secondary",
+            "buttons": [
+                {
+                    "title": "Комплекты Kubernetes",
+                    "link": "https://slurm.io/videocourse-kit",
+                    "class": "btn-white-primary"
+                },
+                {
+                    "title": "Бесплатные курсы",
+                    "link": "https://slurm.io/catalog?price_category=free",
+                    "class": "btn-outline-success"
+                }
+            ]
+        },
+        {
+            "title": "Для компаний",
+            "titleClass": "text-primary",
+            "buttons": [
+                {
+                    "title": "Универсальные доступы",
+                    "link": "https://slurm.io/universal-tickets",
+                    "class": "btn-outline-primary"
+                },
+                {
+                    "title": "Специальные цены для команд",
+                    "link": "https://slurm.io/metacarman#team",
+                    "class": "btn-outline-primary"
+                }
+            ]
+        }
+    ],
+    "info": "Maecenas ut sapien sed risus fermentum semper.<br />Phasellus vitae rutrum nunc.",
+    "links": [
+        {
+            "title": "Рассрочка",
+            "link": "https://slurm.io/metacarman#installment-plan"
+        },
+        {
+            "title": "Налоговый вычет",
+            "link": "https://slurm.io/metacarman#tax"
+        },
+        {
+            "title": "Как купить курс для сотрудника",
+            "link": "https://slurm.io/metacarman#company"
+        }
+    ]
+}

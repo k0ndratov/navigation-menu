@@ -1,0 +1,53 @@
+{
+    "title": "Компаниям",
+    "buttonBlocks": [
+        {
+            "title": "Обучение",
+            "titleClass": "text-primary",
+            "buttons": [
+                {
+                    "title": "Корпоративное обучение",
+                    "link": "https://slurm.io/corporate",
+                    "class": "btn-outline-primary"
+                },
+                {
+                    "title": "Универсальные доступы",
+                    "link": "https://slurm.io/universal-tickets",
+                    "class": "btn-outline-primary"
+                },
+                {
+                    "title": "Повышение квалификации",
+                    "link": "https://slurm.io/devops-upgrade-b2b",
+                    "class": "btn-outline-primary"
+                }
+            ]
+        },
+        {
+            "title": "Маркетинг",
+            "titleClass": "text-secondary",
+            "buttons": [
+                {
+                    "title": "Спецпроекты",
+                    "link": "https://slurm.io/special-projects",
+                    "class": "btn-white-primary"
+                },
+                {
+                    "title": "Обучение продукту",
+                    "link": "https://slurm.io/your-product-course",
+                    "class": "btn-white-primary"
+                }
+            ]
+        }
+    ],
+    "info": "Sed euismod dolor eget viverra dapibus.<br />Sed rhoncus egestas dignissim.",
+    "links": [
+        {
+            "title": "Как купить курс для сотрудника",
+            "link": "https://slurm.io/metacarman#company"
+        },
+        {
+            "title": "Документы",
+            "link": "https://slurm.io/faq-for-oformitel"
+        }
+    ]
+}
