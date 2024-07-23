@@ -97,6 +97,50 @@ class TopMenuPopover extends HTMLElement {
         },
       ],
     };
+    this.buy = {
+      resources: [
+        {
+          title: "Для людей",
+          links: [
+            {
+              title: "Комплекты Kubernetes",
+              link: "https://slurm.io/videocourse-kit",
+            },
+            {
+              title: "Бесплатные курсы",
+              link: "https://slurm.io/catalog?price_category=free",
+            },
+          ],
+        },
+        {
+          title: "Для компаний",
+          links: [
+            {
+              title: "Универсальные доступы",
+              link: "https://slurm.io/universal-tickets",
+            },
+            {
+              title: "Специальные цены для команд",
+              link: "https://slurm.io/metacarman#team",
+            },
+          ],
+        },
+      ],
+      info: [
+        {
+          title: "Рассрочка",
+          link: "https://slurm.io/metacarman#installment-plan",
+        },
+        {
+          title: "Налоговый вычет",
+          link: "https://slurm.io/metacarman#tax",
+        },
+        {
+          title: "Как купить курс для сотрудника",
+          link: "https://slurm.io/metacarman#company",
+        },
+      ],
+    };
   }
 
   connectedCallback() {
@@ -127,10 +171,10 @@ class TopMenuPopover extends HTMLElement {
             </div>
             <button popovertarget="buy" class="menu-button">Варианты покупки</button>
             <div id="buy" class="menu" popover>
-              <ul>
-                <li><a href="#">Menu Item 1</a></li>
-                <li><a href="#">Menu Item 2</a></li>
-                <li><a href="#">Menu Item 3</a></li>
+              ${this.buy.resources.map((item) => `<h3>${item.title}</h3><ul>${item.links.map((item) => `<li><a href="${item.link}">${item.title}</a></li>`).join("")}</ul>`).join("")}
+              <hr/>
+               <ul class="info">
+                ${this.buy.info.map((item) => `<li><a href="${item.link}">${item.title}</a></li>`).join("")}
               </ul>
             </div>
             <button popovertarget="companies" class="menu-button">Компаниям</button>
