@@ -1,38 +1,36 @@
-nav{
-    position: relative;
-    display: flex;
-    gap: 1rem;  
-    height: 72px;
-    background-color: #fff;
+nav {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  height: 72px;
+  background-color: #fff;
 }
 
 .menu {
-    position: absolute;
-    top: -100%;
-    /* left: 0; */
-    width: 100%;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: top 3s ease-in-out;
-    border-bottom-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-   
-  }
-  
-  
+  position: absolute;
+  top: -100%;
+  /* left: 0; */
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: top 3s ease-in-out;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
 .menu:popover-open {
-    top: 72px;
-    /* left: 50px; */
-    padding: 0 100px;
-    animation: slidedown 0.7s ease-in-out;
-    background-color: #fff;
+  top: 72px;
+  /* left: 50px; */
+  padding: 0 100px;
+  animation: slidedown 0.7s ease-in-out;
+  background-color: #fff;
 }
 
 @keyframes slidedown {
-    0% {
-        transform: translateY(-100%);
-    }
-    100% {
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

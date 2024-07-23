@@ -6,97 +6,97 @@ class TopMenuPopover extends HTMLElement {
     this.catalog = {
       grouped: [
         {
-          "title": "Все курсы",
-          "type": "inverted",
-          "link": "https://slurm.io/catalog",
-          "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          title: "Все курсы",
+          type: "inverted",
+          link: "https://slurm.io/catalog",
+          info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         },
         {
-          "title": "Инженер",
-          "link": "https://slurm.io/catalog?direction_ids=30",
-          "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          title: "Инженер",
+          link: "https://slurm.io/catalog?direction_ids=30",
+          info: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         },
         {
-          "title": "Разработчик",
-          "link": "https://slurm.io/catalog?direction_ids=17",
-          "info": "Integer sit amet hendrerit nisl, ac auctor ante."
+          title: "Разработчик",
+          link: "https://slurm.io/catalog?direction_ids=17",
+          info: "Integer sit amet hendrerit nisl, ac auctor ante.",
         },
         {
-          "title": "Начинающий",
-          "link": "https://slurm.io/catalog?experience_level=1",
-          "info": "Praesent id odio finibus, vehicula orci eget, elementum urna."
-        }
+          title: "Начинающий",
+          link: "https://slurm.io/catalog?experience_level=1",
+          info: "Praesent id odio finibus, vehicula orci eget, elementum urna.",
+        },
       ],
-      "courses": [
+      courses: [
         {
-          "title": "Архитектура",
-          "link": "https://slurm.io/catalog?direction_ids=22",
-          "info": "Cras faucibus, augue sed dictum aliquet, felis dolor pretium mi, et maximus purus ante ut leo.<br />Mauris a tempor nisl."
+          title: "Архитектура",
+          link: "https://slurm.io/catalog?direction_ids=22",
+          info: "Cras faucibus, augue sed dictum aliquet, felis dolor pretium mi, et maximus purus ante ut leo.<br />Mauris a tempor nisl.",
         },
         {
-          "title": "Факультет Kubernetes",
-          "link": "https://slurm.io/catalog?direction_ids=19",
-          "info": "Cras faucibus, augue sed dictum aliquet, felis dolor pretium mi, et maximus purus ante ut leo.<br />Mauris a tempor nisl."
+          title: "Факультет Kubernetes",
+          link: "https://slurm.io/catalog?direction_ids=19",
+          info: "Cras faucibus, augue sed dictum aliquet, felis dolor pretium mi, et maximus purus ante ut leo.<br />Mauris a tempor nisl.",
         },
         {
-          "title": "DevOps и SRE",
-          "link": "https://slurm.io/catalog?direction_ids=16",
-          "info": "Aenean a finibus ligula, ac interdum neque.<br />Fusce non viverra est, a aliquet lorem."
+          title: "DevOps и SRE",
+          link: "https://slurm.io/catalog?direction_ids=16",
+          info: "Aenean a finibus ligula, ac interdum neque.<br />Fusce non viverra est, a aliquet lorem.",
         },
         {
-          "title": "CI/CD и IaC",
-          "link": "https://slurm.io/catalog?direction_ids=15",
-          "info": "Sed pretium malesuada justo, in interdum neque blandit vel.<br />Sed mauris mauris, dictum nec aliquet id, dapibus et sem."
+          title: "CI/CD и IaC",
+          link: "https://slurm.io/catalog?direction_ids=15",
+          info: "Sed pretium malesuada justo, in interdum neque blandit vel.<br />Sed mauris mauris, dictum nec aliquet id, dapibus et sem.",
         },
         {
-          "title": "Docker",
-          "link": "https://slurm.io/catalog?direction_ids=29",
-          "info": "Phasellus at tincidunt elit, vitae consectetur nibh.<br />Fusce nulla justo, vulputate non nulla et, laoreet tristique arcu."
+          title: "Docker",
+          link: "https://slurm.io/catalog?direction_ids=29",
+          info: "Phasellus at tincidunt elit, vitae consectetur nibh.<br />Fusce nulla justo, vulputate non nulla et, laoreet tristique arcu.",
         },
         {
-          "title": "Мониторинг",
-          "link": "https://slurm.io/catalog?direction_ids=18",
-          "info": "Cras tortor felis, aliquam sit amet maximus eget, blandit mattis diam.<br />Quisque eleifend a nulla non convallis."
+          title: "Мониторинг",
+          link: "https://slurm.io/catalog?direction_ids=18",
+          info: "Cras tortor felis, aliquam sit amet maximus eget, blandit mattis diam.<br />Quisque eleifend a nulla non convallis.",
         },
         {
-          "title": "Облака",
-          "link": "https://slurm.io/catalog?direction_ids=28",
-          "info": "Curabitur porttitor dui justo, at convallis orci egestas et.<br />Morbi sit amet mattis ex."
+          title: "Облака",
+          link: "https://slurm.io/catalog?direction_ids=28",
+          info: "Curabitur porttitor dui justo, at convallis orci egestas et.<br />Morbi sit amet mattis ex.",
         },
         {
-          "title": "Работа с данными",
-          "link": "https://slurm.io/catalog?direction_ids=21",
-          "info": "Suspendisse potenti.<br />Fusce euismod tellus mi, vitae laoreet ante dignissim mollis."
+          title: "Работа с данными",
+          link: "https://slurm.io/catalog?direction_ids=21",
+          info: "Suspendisse potenti.<br />Fusce euismod tellus mi, vitae laoreet ante dignissim mollis.",
         },
         {
-          "title": "Безопасность",
-          "link": "https://slurm.io/catalog?direction_ids=20",
-          "info": "Duis vulputate orci in est condimentum lacinia.<br />Quisque eget velit id massa iaculis consequat a non leo."
+          title: "Безопасность",
+          link: "https://slurm.io/catalog?direction_ids=20",
+          info: "Duis vulputate orci in est condimentum lacinia.<br />Quisque eget velit id massa iaculis consequat a non leo.",
         },
         {
-          "title": "Программирование",
-          "link": "https://slurm.io/catalog?direction_ids=27",
-          "info": "In hac habitasse platea dictumst.<br />Phasellus ac erat tempor, tincidunt nibh bibendum, ultrices nisi."
+          title: "Программирование",
+          link: "https://slurm.io/catalog?direction_ids=27",
+          info: "In hac habitasse platea dictumst.<br />Phasellus ac erat tempor, tincidunt nibh bibendum, ultrices nisi.",
         },
         {
-          "title": "Soft skills",
-          "link": "https://slurm.io/catalog?direction_ids=26",
-          "info": "Praesent in massa laoreet, dapibus erat at, posuere erat.<br />Maecenas dapibus augue nec elit cursus scelerisque."
+          title: "Soft skills",
+          link: "https://slurm.io/catalog?direction_ids=26",
+          info: "Praesent in massa laoreet, dapibus erat at, posuere erat.<br />Maecenas dapibus augue nec elit cursus scelerisque.",
         },
         {
-          "title": "Бесплатные курсы",
-          "type": "free",
-          "link": "https://slurm.io/catalog?price_category=free",
-          "info": "Etiam et tellus a massa condimentum placerat.<br />Sed efficitur maximus leo, ut laoreet dolor congue nec."
-        }
+          title: "Бесплатные курсы",
+          type: "free",
+          link: "https://slurm.io/catalog?price_category=free",
+          info: "Etiam et tellus a massa condimentum placerat.<br />Sed efficitur maximus leo, ut laoreet dolor congue nec.",
+        },
       ],
-      "info": [
+      info: [
         {
-          "title": "Календарь запуска курсов",
-          "link": "https://slurm.io/calendar"
-        }
-      ]
-    }
+          title: "Календарь запуска курсов",
+          link: "https://slurm.io/calendar",
+        },
+      ],
+    };
   }
 
   connectedCallback() {
@@ -115,14 +115,14 @@ class TopMenuPopover extends HTMLElement {
             <button popovertarget="catalog" class="menu-button">Каталог курсов</button>
             <div id="catalog" class="menu" popover>
               <ul class="courses">
-                ${this.catalog.grouped.map(item => `<li class="${item.type}"><a href="${item.link}">${item.title}</a></li>`).join('')}
+                ${this.catalog.grouped.map((item) => `<li class="${item.type}"><a href="${item.link}">${item.title}</a></li>`).join("")}
               </ul>
               <ul class="courses">
-                ${this.catalog.courses.map(item => `<li class="${item.type}"><a href="${item.link}">${item.title}</a></li>`).join('')}
+                ${this.catalog.courses.map((item) => `<li class="${item.type}"><a href="${item.link}">${item.title}</a></li>`).join("")}
               </ul>
               <hr/>
                <ul class="info">
-                ${this.catalog.info.map(item => `<li><a href="${item.link}">${item.title}</a></li>`).join('')}
+                ${this.catalog.info.map((item) => `<li><a href="${item.link}">${item.title}</a></li>`).join("")}
               </ul>
             </div>
             <button popovertarget="buy" class="menu-button">Варианты покупки</button>
@@ -140,17 +140,16 @@ class TopMenuPopover extends HTMLElement {
             <a href="https://slurm.io/" style="padding: 1.5rem; text-decoration: none;color: #5C76FF;">Войти</a>
             </nav>
           `;
-    this.popovers = Array.from(this.querySelectorAll('[popover]'));
-    this.popovers.forEach(popover => {
+    this.popovers = Array.from(this.querySelectorAll("[popover]"));
+    this.popovers.forEach((popover) => {
       const targetID = popover.id;
-      const button = this.querySelector(`[popovertarget="${targetID}"]`)
-      button.addEventListener('click', () => {
-        popover.classList.toggle('popover-open');
+      const button = this.querySelector(`[popovertarget="${targetID}"]`);
+      button.addEventListener("click", () => {
+        popover.classList.toggle("popover-open");
       });
     });
     // this.querySelector('#top-menu-popover').classList.add('popover-open');
   }
 }
 
-customElements.define('top-menu-popover', TopMenuPopover);
-
+customElements.define("top-menu-popover", TopMenuPopover);
