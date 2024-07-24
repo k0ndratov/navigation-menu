@@ -3,6 +3,7 @@ class TopMenuPopover extends HTMLElement {
     super();
     // this.attachShadow({ mode: 'open' }); // Attach shadow root
     this.popovers = [];
+    this.openedMenuSet = new Set();
     this.catalog = {
       grouped: [
         {
@@ -300,14 +301,41 @@ class TopMenuPopover extends HTMLElement {
           </nav>
           `;
     this.popovers = Array.from(this.querySelectorAll("[popover]"));
+
+
+    // if (openPopovers.length === 0) {
+    //   const newPopover = this.popovers[0];
+    //   newPopover.classList.add('slide-down');
+    // }
+
+
     this.popovers.forEach((popover) => {
-      const targetID = popover.id;
-      const button = this.querySelector(`[popovertarget="${targetID}"]`);
-      button.addEventListener("click", () => {
-        popover.classList.toggle("popover-open");
-      });
+      // const targetID = popover.id;
+      // const button = this.querySelector(`[popovertarget="${targetID}"]`);
+      // const openPopovers = this.popovers.filter(popover => popover.classList.contains('popover-open'))
+      popover.addEventListener('beforetoggle', (event) => {
+        console.log(this.openedMenuSet, event);
+        if (this.openedMenuSet.size === 0) {
+          // popover.classList.remove("slide-down");
+          // this.openedMenuSet.add(event.target)
+          popover.classList.add("slide-down");
+        }
+        if (event.newState === 'open' && event.oldState === 'closed') {
+          // popover.classList.add("slide-down");
+          this.openedMenuSet.add({ [event.target.id]: true })
+        }
+        if (event.newState === 'closed' && event.oldState === 'open') {
+          popover.classList.remove("slide-down");
+          popover.classList.remove("closed");
+          // this.openedMenuSet.delete(event.target.id)
+        }
+        setTimeout(() => {
+          console.log(this.popovers);
+        }, 500);
+
+      })
+
     });
-    // this.querySelector('#top-menu-popover').classList.add('popover-open');
   }
 }
 

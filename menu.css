@@ -21,9 +21,11 @@ nav {
 
 .menu:popover-open {
   top: 72px;
-  /* left: 50px; */
-  animation: slidedown 0.7s ease-in-out;
   background-color: #fff;
+}
+
+.menu:popover-open.slide-down {
+  animation: slidedown 0.7s ease-in-out;
 }
 
 @keyframes slidedown {
