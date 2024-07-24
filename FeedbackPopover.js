@@ -1,21 +1,23 @@
 class FeedbackPopover extends HTMLElement {
-    constructor() {
-        super();
-       
-        // Create a shadow root
-        this.attachShadow({ mode: 'open' });
-        let jsondata = {};
-        fetch('https://raw.githubusercontent.com/commondataio/dateno-stats/main/data/current/stats_totals.json')
-        .then(response => response.json())
-        .then(data => {
-            jsondata = data;
-        })
-        .catch(error => {
-            console.error('Error:', error);
-        });
+  constructor() {
+    super();
 
-        const template = document.createElement('template');
-        template.innerHTML = `
+    // Create a shadow root
+    this.attachShadow({ mode: "open" });
+    let jsondata = {};
+    fetch(
+      "https://raw.githubusercontent.com/commondataio/dateno-stats/main/data/current/stats_totals.json"
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        jsondata = data;
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+
+    const template = document.createElement("template");
+    template.innerHTML = `
             <style>
                 .popover-content{
                 position: absolute;
@@ -38,26 +40,26 @@ class FeedbackPopover extends HTMLElement {
             </div>
         `;
 
-        this.shadowRoot.appendChild(template.content.cloneNode(true));
-        
-        this.shadowRoot.querySelector('#but').addEventListener('click',  (event) => {
-            if (event.target.getAttribute('popovertarget') === 'feedback') {
-                this.shadowRoot.querySelector('#feedback').innerHTML  = ` <ul> 
+    this.shadowRoot.appendChild(template.content.cloneNode(true));
+
+    this.shadowRoot.querySelector("#but").addEventListener("click", (event) => {
+      if (event.target.getAttribute("popovertarget") === "feedback") {
+        this.shadowRoot.querySelector("#feedback").innerHTML = ` <ul> 
                 <li> sources: ${jsondata.sources} </li>
                 <li> datasets: ${jsondata.datasets}</li>
                 </ul>`;
-            }
-        });
-    }
+      }
+    });
+  }
 
-    connectedCallback() {
-        // Add any initialization logic here
-    }
+  connectedCallback() {
+    // Add any initialization logic here
+  }
 
-    disconnectedCallback() {
-        // Clean up any resources here
-    }
+  disconnectedCallback() {
+    // Clean up any resources here
+  }
 }
 
 // Define the custom element
-customElements.define('feedback-popover', FeedbackPopover);
+customElements.define("feedback-popover", FeedbackPopover);

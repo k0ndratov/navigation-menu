@@ -1,0 +1,28 @@
+.popover__content {
+  padding: 32px 48px 40px 48px;
+}
+
+.popover__main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.popover__group {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: baseline;
+}
+
+.popover__group-title {
+  color: var(--color-text);
+  font-weight: 400;
+  font-size: 16px;
+  min-width: 200px;
+}
+
+.popover__hr {
+  margin-bottom: 24px;
+}
