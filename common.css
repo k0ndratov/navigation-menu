@@ -1,85 +1,65 @@
-html{
-    color-scheme: light dark;
-    --link-border-radius: 2rem;
-    --background-color: #fff;
-    --color-text: rgb(174, 174, 175);
-    --button-text: rgb(22, 21, 24);
-    --hover-color: rgb(108, 130, 225);
-    --border-focus-color: #161518;
-    --free-color: rgb(43, 210, 138);
+@font-face {
+  font-family: "Inter";
+  src: url("./Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  color-scheme: light dark;
+  --link-border-radius: 16px;
+  --background-color: #fff;
+  --color-text: rgb(174, 174, 175);
+  --button-text: rgb(22, 21, 24);
+  --hover-color: rgb(108, 130, 225);
+  --border-focus-color: #161518;
+  --free-color: rgb(43, 210, 138);
 }
 
 body {
-    font-family: system-ui;
-    
+  font-family: Inter;
+  font-size: 18px;
 }
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 dialog:not([open], [popover]) {
-    display: none !important;
+  display: none !important;
 }
 [popover] {
-    border: none;
-    background: none;
-    inset: unset;
-    color: inherit;
+  border: none;
+  background: none;
+  inset: unset;
+  color: inherit;
 }
 
 [popover]:not(:popover-open) {
-    display: none !important;
+  display: none !important;
 }
-section{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
-    max-width: 50%;
-    margin: auto;
-    p{
-        font-size: 2rem;
-    }
-}
-.menu-button{
-    padding: 0 2rem;
-    background: none;
-    color: var(--button-text);
-    line-height: 1;
-    font-size: 18px;
-    border: none;
-    border-top: 4px solid transparent;
-    border-bottom: 4px solid transparent;
-    &:focus{
-        border-bottom: 4px solid var(--border-focus-color);
-    }
-}
-ul.info{
-    margin: 1rem 0;
-}
-ul.courses{
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 1rem;
-    list-style: none;
-    li{
-        margin-bottom: 0.5rem;
-        color: var(--button-text);
-        a{
-            text-decoration: none;
-            color: inherit;
-        }
-        padding: 14px 24px;
-        border-radius: var(--link-border-radius);
-        border: 1px solid var(--color-text);
-        &.free{
-            color: var(--free-color);
-            border-color: var(--free-color);
-        }
-    }
 
+a {
+  text-decoration: none;
+  color: var(--button-text);
+
+  &:hover {
+    color: var(--color-text);
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 50%;
+  margin: auto;
+  p {
+    font-size: 2rem;
+  }
 }
