@@ -1,6 +1,14 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
   color-scheme: light dark;
-  --link-border-radius: 2rem;
+  --link-border-radius: 16px;
   --background-color: #fff;
   --color-text: rgb(174, 174, 175);
   --button-text: rgb(22, 21, 24);
@@ -10,7 +18,8 @@ html {
 }
 
 body {
-  font-family: system-ui;
+  font-family: Inter;
+  font-size: 18px;
 }
 *,
 *::before,
@@ -33,6 +42,16 @@ dialog:not([open], [popover]) {
 [popover]:not(:popover-open) {
   display: none !important;
 }
+
+a {
+  text-decoration: none;
+  color: var(--button-text);
+
+  &:hover {
+    color: var(--color-text);
+  }
+}
+
 section {
   display: flex;
   flex-direction: column;
@@ -42,42 +61,5 @@ section {
   margin: auto;
   p {
     font-size: 2rem;
-  }
-}
-.menu-button {
-  padding: 0 2rem;
-  background: none;
-  color: var(--button-text);
-  line-height: 1;
-  font-size: 18px;
-  border: none;
-  border-top: 4px solid transparent;
-  border-bottom: 4px solid transparent;
-  &:focus {
-    border-bottom: 4px solid var(--border-focus-color);
-  }
-}
-ul.info {
-  margin: 1rem 0;
-}
-ul.courses {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 1rem;
-  list-style: none;
-  li {
-    margin-bottom: 0.5rem;
-    color: var(--button-text);
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-    padding: 14px 24px;
-    border-radius: var(--link-border-radius);
-    border: 1px solid var(--color-text);
-    &.free {
-      color: var(--free-color);
-      border-color: var(--free-color);
-    }
   }
 }
